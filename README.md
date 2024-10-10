@@ -1,5 +1,5 @@
 
- ![image](https://github.com/user-attachments/assets/710777e7-5715-4690-a22e-ed12b0584e91)
+![image](https://github.com/user-attachments/assets/a8e007bb-b8ca-48c1-ae89-c25141e8cf6b)
 
  Let's start learning Tailwind CSS 
 
