@@ -7,14 +7,57 @@
 
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+   
+        <style>
+  .text-customColor {
+    color: hsl(244, 29%, 19%);
+  }
+</style>
+
+    
 
 
 
 </head>
-<body>
-    <button class="bg-blue-500 text-white p-2">
-        Click Me
-      </button>
+<body class="p-1 flex flex-col  gap-[110px] justify-center">
+  <header class=" mt-3 flex justify-around  ">
+  
+        <div class="side1 flex border  w-[15vw]  items-center  rounded-2xl p-1 shadow-md ">
+            <div class="img h-[40px]  w-[100px] flex justify-center items-center  border-r p-1 border-black">
+                     <img class=" h-[40px]" src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="parag pl-1  ">
+             <p class="text-zinc-500  text-[12px]">the everything app for work</p>
+             
+            </div>
+     
+         </div>
+    
+   <div class="flex gap-2">
+    <div class="side2 flex justify-center items-center  border border--purple-400 w-[15vw]  h-[49px]  rounded-2xl  shadow-md  text-[15px] text-neutral-600  text-[18px]">
+        <p>Contact Sales</p>
+    </div>
+    <div class="side3 side2 p-2 flex justify-center justify-around items-center  border border--purple-400 w-[15vw]  h-[49px]  rounded-2xl p-1 shadow-md  text-[18px] text-zinc-500">
+        <div class=" w-[70px] flex justify-center p-[3px] rounded-lg text-[15px] border border--purple-400  hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white hover:font-bold"><a href="" >Log in </a></div>
+        <div class="bg-red-500 w-[70px] flex justify-center p-[3px] rounded-lg text-[15px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold" ><a href="">Sign up</a></div>
+    </div>
+   </div>
+    
+  </header>
+  <main class="flex  flex-col justify-center items-center  gap-1  ">
+    
+       <div class="H11 text-[50px] font-bold h1 w-[700px] flex justify-center pl-2 text-customColor gap-1"> <h1>The everything app For</h1></div>
+       <div class="H11 text-[50px] font-bold h1 w-[700px] flex justify-center pl-2 text-customColor "><h1> your Work</h1></div>
+       <div class="H22 text-customColor  "><h2> Get everyone working in a single platform</h2></div>
+       <div class="H33 text-customColor mb-3"><h3>designed to manage any type of work</h3></div>
+   
+    <button class="  flex justify-center items-center w-[400px] h-[40px] rounded-lg p-7 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-[20px] mb-2 ">
+        Get Started It's Free !
+    </button>
+   
+    <div><p class=" text-gray-600 font-bold">Free Forever No credit Card </p></div>
+
+  </main>
       
 </body>
 </html>
